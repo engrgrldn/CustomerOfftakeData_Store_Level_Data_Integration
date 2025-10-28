@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Python mini-project simulates the **COD (Consumer Offtake Data) Store Level Data Integration** ETL pipeline as described in the Business Scope Statement (BSS). It demonstrates the complete data flow from raw retailer files through validation, harmonization, quality checks, and loading into the Corporate Data Model (CDM).
+This Python mini-project simulates the **COD (Consumer Offtake Data) Store Level Data Integration** ETL pipeline. It demonstrates the complete data flow from raw retailer files through validation, harmonization, quality checks, and loading into the Corporate Data Model (CDM).
 
 ## Architecture
 
@@ -61,13 +61,13 @@ This Python mini-project simulates the **COD (Consumer Offtake Data) Store Level
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## Key Features Implemented from BSS
+## Key Features Implemented 
 
-### 1. **File Naming Convention Validation** (BSS 3.2.2.2)
+### 1. **File Naming Convention Validation**
 - Validates format: `AABBB_CCDDDDEEFFFF_GGGGG[...].csv`
 - Extracts metadata: country, file type, date ranges, customer ID
 
-### 2. **Top Line Data Validation** (BSS 3.2.3)
+### 2. **Top Line Data Validation** 
 - ✅ Store ID completeness check
 - ✅ New stores identification
 - ✅ Store attribute change detection
@@ -75,19 +75,19 @@ This Python mini-project simulates the **COD (Consumer Offtake Data) Store Level
 - ✅ Volume consistency checks
 - ✅ Delta load logic (file hashing)
 
-### 3. **Data Harmonization** (BSS 3.2.4)
+### 3. **Data Harmonization**
 - **Time**: Week 53/0 mapping, date standardization
 - **Location**: Unique store ID creation, COD attributes
 - **Product**: Retailer SKU → RB Reference SKU mapping
 - **Measures**: Thousand separator handling, promo/non-promo split
 
-### 4. **Data Quality Validation** (BSS 3.2.5)
+### 4. **Data Quality Validation** 
 - CRM minimum requirements check
 - Volume consistency by banner
 - Market attributes rollup
 - Product attributes validation
 
-### 5. **CDM Data Model** (BSS Section on Data Model)
+### 5. **CDM Data Model** 
 
 #### Dimensions:
 - `dim_store` - COD-specific store attributes
@@ -102,12 +102,12 @@ This Python mini-project simulates the **COD (Consumer Offtake Data) Store Level
 - `audit_file_log` - File processing history
 - `audit_validation_history` - Validation results
 
-### 6. **Dual-Dimension Strategy** (BSS Section on Dimensions)
+### 6. **Dual-Dimension Strategy**
 - All stores loaded to COD-specific dimensions
 - Only CRM-qualified stores available cross-functionally
 - Enables flexible reporting
 
-### 7. **KPI Implementation** (BSS Section 4)
+### 7. **KPI Implementation** 
 Reports simulate KPIs SASR001050-SASR001068:
 - Offtake Volume/Value (Store, Syndicated, Combined)
 - Promo vs Non-Promo metrics
@@ -270,7 +270,7 @@ file_name TEXT
 ## Reporting Capabilities
 
 ### KPI Report
-Based on BSS definitions (SASR001050-SASR001068):
+
 - Off Take Volume/Value (Store level)
 - Promo Volume/Value
 - Non-Promo Volume/Value
@@ -386,18 +386,10 @@ class TestCODETL(unittest.TestCase):
 ### Issue: "Volume consistency check failed"
 **Solution**: Review data for significant volume drops (>20% threshold)
 
-## Alignment with BSS Document
 
-| BSS Section | Implementation | Status |
-|-------------|----------------|--------|
-| 3.2.1 Data Collection | Sample data generation | ✅ Complete |
-| 3.2.2 Data Provisioning | File naming validation | ✅ Complete |
-| 3.2.3 Top Line Validation | 5 validation checks | ✅ Complete |
-| 3.2.4 Data Harmonization | Time/Location/Product/Measures | ✅ Complete |
-| 3.2.5 Data Quality | 3 quality checks | ✅ Complete |
-| 3.2.6 CDM Load | Dual-dimension strategy | ✅ Complete |
-| Section 4 KPIs | SASR001050-068 simulated | ✅ Complete |
-| Audit Trail | File and validation logging | ✅ Complete |
+
+
+
 
 ## Future Enhancements
 
