@@ -1,0 +1,4 @@
+Store_ID,Store_Name,City,Volume,Value,Banner,Street,Post_Code,Country,Source,Unique_Store_ID,Load_Timestamp,Period_Start,Period_End
+4001,Walmart Dallas,Dallas,12000,96000,Walmart,123 Main St,75201,US,IRI,4001_Walmart,2025-10-22 21:15:03.334896,012025,022025
+4002,Target Chicago,Chicago,11000,88000,Target,456 State St,60601,US,IRI,4002_Target,2025-10-22 21:15:03.334896,012025,022025
+4003,Kroger Atlanta,Atlanta,10500,84000,Kroger,789 Peachtree St,30303,US,IRI,4003_Kroger,2025-10-22 21:15:03.334896,012025,022025

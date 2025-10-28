@@ -1,0 +1,3 @@
+Store_ID,Store_Name,City,Volume,Value,Banner,Country,Source,Unique_Store_ID,Load_Timestamp,Period_Start,Period_End
+1001,REWE Berlin,Berlin,5000,25000,REWE,AT,SOF,1001_REWE,2025-10-22 21:15:03.321022,012025,022025
+1002,REWE Munich,Munich,4800,24000,REWE,AT,SOF,1002_REWE,2025-10-22 21:15:03.321022,012025,022025

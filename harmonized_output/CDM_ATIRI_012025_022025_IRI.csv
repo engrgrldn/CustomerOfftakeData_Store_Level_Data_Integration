@@ -1,0 +1,4 @@
+Store_ID,Store_Name,City,Volume,Value,Banner,Street,Post_Code,Country,Source,Unique_Store_ID,Load_Timestamp,Period_Start,Period_End
+2001,SPAR Vienna,Vienna,4500,27000,SPAR,Währinger Strasse 30,1180,AT,IRI,2001_SPAR,2025-10-22 21:15:03.309573,012025,022025
+2002,BILLA Salzburg,Salzburg,4200,25200,BILLA,Getreidegasse 10,5020,AT,IRI,2002_BILLA,2025-10-22 21:15:03.309573,012025,022025
+2003,Hofer Innsbruck,Innsbruck,3900,23400,Hofer,Maria-Theresien-Strasse 15,6020,AT,IRI,2003_Hofer,2025-10-22 21:15:03.309573,012025,022025

@@ -1,0 +1,4 @@
+Store_ID,Store_Name,City,Volume,Value,Banner,Street,Post_Code,Key_Account,Country,Source,Unique_Store_ID,Load_Timestamp,Period_Start,Period_End
+3001,Edeka Berlin,Berlin,6800,40800,Edeka,Alexanderplatz 1,10178,Edeka Group,DE,IRI,3001_Edeka,2025-10-22 21:15:03.329312,012025,022025
+3002,Rewe Munich,Munich,7200,43200,Rewe,Kaufingerstrasse 10,80331,Rewe Group,DE,IRI,3002_Rewe,2025-10-22 21:15:03.329312,012025,022025
+3003,Aldi Hamburg,Hamburg,6500,39000,Aldi,Reeperbahn 50,20359,Aldi Nord,DE,IRI,3003_Aldi,2025-10-22 21:15:03.329312,012025,022025
